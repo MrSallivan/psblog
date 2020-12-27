@@ -22,8 +22,14 @@
 		}
 		// .sidebar__content
 		&__content {
+			padding: 0 2rem;
+			margin-top: -5rem;
+
 		}
 		// .sidebar__footer
 		&__footer {
+			display: flex;
+			justify-content: space-between;
+			padding: 0 2rem;
 		}
 }
