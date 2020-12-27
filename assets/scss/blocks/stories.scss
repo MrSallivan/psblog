@@ -1,0 +1,12 @@
+.stories {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 19.5rem ;
+	grid-column-gap: 1.3rem;
+
+	&__item {
+		background-color: #ccc;
+	}
+
+
+}
