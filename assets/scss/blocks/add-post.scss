@@ -1,0 +1,28 @@
+.add-post {
+	margin-bottom: 3rem;
+	background:$secondary;
+	box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.45);
+	border-radius: 5px;
+	padding: 1.5rem 2rem;
+		// .add-post__form
+		&__form {
+			display: flex;
+		}
+		&__form-action {
+
+		}
+		// .add-post__textarea
+		&__textarea {
+			font-family: inherit;
+			font-size: 1.5rem;
+			&::placeholder {
+				color: #D2D2D2;
+			}
+		}
+		// .add-post__input
+		&__input {
+		}
+		// .add-post__btn
+		&__btn {
+		}
+}
