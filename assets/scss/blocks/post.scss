@@ -1,0 +1,30 @@
+.post {
+	background-color: $primary;
+	box-shadow: 0 15px 25px rgba($black, .35);
+	margin-bottom: 3rem;
+	padding: 2.5rem;
+	border-radius: .5rem;
+
+		// .post__header
+		&__header {
+			margin: -2.5rem -2.5rem 0;
+			border-top-right-radius: .5rem;
+			border-top-left-radius: .5rem;
+			overflow: hidden;
+		}
+		// .post__content
+		&__content {
+			margin-bottom: 2rem;
+		}
+		// .post__text
+		&__text {
+			font-size: 1.4rem;
+			color: #D2D2D2;
+		}
+		&__data {
+			line-height: 1.2rem;
+		}
+		// .post__footer
+		&__footer {
+		}
+}
