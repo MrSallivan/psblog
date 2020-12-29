@@ -7,22 +7,62 @@
 		// .add-post__form
 		&__form {
 			display: flex;
+			align-items: center;
 		}
-		&__form-action {
-
-		}
+		
 		// .add-post__textarea
 		&__textarea {
+			display: block;
+			width: 78%;
+			height: 2.6rem;
 			font-family: inherit;
 			font-size: 1.5rem;
+			color: $white;
+			border: none;
+			background: transparent;
+			resize: none;
 			&::placeholder {
 				color: #D2D2D2;
 			}
 		}
+		&__form-action {
+			width: 22%;
+			display: flex;
+			justify-content: space-between;
+		}
+		.add-post__file,
+		.add-post__send {
+			display: block;
+			width: 4.4rem;
+			height: 4.4rem;
+			border-radius: 50%;
+			border: none;
+			cursor: pointer;
+			transition: all .3s linear;
+		}
 		// .add-post__input
 		&__input {
 		}
-		// .add-post__btn
-		&__btn {
+		&__file {
+			background: #EBEBEB url("../images/post/foto.svg") center no-repeat;
+			input {
+				display: none;
+			}
+			&:hover {
+				background-color: darken(#EBEBEB, 10%);
+			}
+		}
+		// .add-post__send
+		&__send {
+			padding: 0;
+			margin: 0;
+			background-color: $blue;
+			img {
+				opacity: 0.75;
+			}
+			&:hover {
+				background-color: darken($blue, 20%);
+			}
+			
 		}
 }
