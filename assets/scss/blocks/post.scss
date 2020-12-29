@@ -16,6 +16,21 @@
 		&__content {
 			margin-bottom: 2rem;
 		}
+		&__title {
+			font-size: 1.8rem;
+			color: $white;
+			font-weight: 500;
+			margin: 1.5rem 0;
+
+			a {
+				color: inherit;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
 		// .post__text
 		&__text {
 			font-size: 1.4rem;
