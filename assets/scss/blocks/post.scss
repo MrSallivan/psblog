@@ -11,6 +11,15 @@
 		border-top-right-radius: 0.5rem;
 		border-top-left-radius: 0.5rem;
 		overflow: hidden;
+
+		&_video {
+			margin: 0 0 1.5rem 0;
+		}
+	}
+	&__preview {
+		display: block;
+		width: 100%;
+		height: auto;
 	}
 	// .post__content
 	&__content {
