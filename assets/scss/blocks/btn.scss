@@ -13,7 +13,9 @@
 	padding: 1.12em 2.1em;
 	border-radius: 3em;
 	transition: background-color .2s linear;
-
+	&:hover {
+		text-decoration: none;
+	}
 		// .btn_red
 		&_red {
 			background: $red;

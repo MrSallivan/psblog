@@ -5,15 +5,38 @@
 	padding: 2.5rem;
 	border-radius: 0.5rem;
 
+	&__actions {
+		margin-bottom: 1.5rem;
+		display: flex;
+		justify-content: space-between;
+		font-size: 1.2rem;
+		color: $white;
+
+		a {
+			color: inherit;
+			opacity: 0.6;
+			transition: opacity 0.2s linear;
+
+			&:hover {
+				color: inherit;
+				opacity: 1;
+			}
+		}
+
+		&-icon {
+			margin-left: 0.5rem;
+		}
+	}
+
 	// .post__header
 	&__header {
-		margin: -2.5rem -2.5rem 0;
+		margin: 0 0 1.5rem 0;
 		border-top-right-radius: 0.5rem;
 		border-top-left-radius: 0.5rem;
 		overflow: hidden;
 
-		&_video {
-			margin: 0 0 1.5rem 0;
+		&_preview {
+			margin: -2.5rem -2.5rem 0;
 		}
 	}
 	&__preview {
@@ -33,17 +56,66 @@
 
 		a {
 			color: inherit;
-			text-decoration: none;
-
-			&:hover {
-				text-decoration: underline;
-			}
 		}
+
+		&_mb0 {
+			margin-bottom: 0;
+		}
+	}
+	&__description {
+		font-size: 1.4rem;
+		color: #d2d2d2;
 	}
 	// .post__text
 	&__text {
 		font-size: 1.4rem;
-		color: #d2d2d2;
+		color: $white;
+		border-bottom: 1px solid #1C1C1C;
+
+		p {
+			margin-bottom: 2rem;
+		}
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-weight: 700;
+			margin-bottom: 2rem;
+		}
+		h2 {
+			font-size: 1.3em;
+		}
+		h3 {
+			font-size: 1.25em;
+		}
+		h4 {
+			font-size: 1.15em;
+		}
+		h5,
+		h6 {
+			font-size: 1em;
+		}
+		ul,
+		ol {
+			margin-bottom: 2rem;
+		}
+		ol {
+			list-style: decimal;
+			list-style-position: inside;
+		}
+		table {
+			width: 100%;
+			margin-bottom: 2rem;
+		}
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+		a {
+			color: $blue;
+		}
 	}
 	&__data {
 		display: flex;
@@ -51,10 +123,7 @@
 		line-height: 1.2rem;
 		a {
 			color: inherit;
-			text-decoration: none;
-		}
-		a:hover {
-			text-decoration: underline;
+			
 		}
 	}
 	&__data-item {
