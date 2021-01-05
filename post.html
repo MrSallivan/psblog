@@ -24,7 +24,7 @@ title: Post
 			</li>
 		</ul>
 	</div>
-	<div class="post__content">
+	< class="post__content">
 		<div class="post__text">
 			<h2>Title h2</h2>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem cumque consequuntur qui. Suscipit a iste quas
@@ -73,7 +73,7 @@ title: Post
 		</div>
 		<!--post text-->
 		<div class="related">
-			<h3 class="related__title">Интересно почитать</h3>
+			<h3 class="post__subtitle">Интересно почитать</h3>
 			<ul class="related__list">
 				<li class="related__list-item">
 					<h4 class="related__list-title">
@@ -100,19 +100,72 @@ title: Post
 					<time class="related__list-date" datetime="2020-06-21 19:52">21.06.2020</time>
 				</li>
 			</ul>
-		</div><!--/related-->
-		<div class="comments">
-			<h3 class="comments__title">Обсуждение</h3>
-			<form class="form" action="/" method="POST">
-				<div class="form__group">
-					<textarea class="form__control form__control_textarea" name="comment-text" id="" placeholder="текст комментария"></textarea>
-					<span class="form__line"></span>
+		</div>
+		<!--/related-->
+
+		<h3 class="post__subtitle">Обсуждение</h3>
+		<form class="form" action="/" method="POST">
+			<div class="form__group">
+				<textarea class="form__control form__control_textarea" name="comment-text" id=""
+					placeholder="текст комментария"></textarea>
+				<span class="form__line"></span>
+			</div>
+			<button class="btn btn_blue btn_rounded btn_sm" type="submit">Отправить</button>
+		</form>
+
+		<ul class="comments">
+			<li class="comments__item">
+				<div class="comments__header">
+					<img class="comments__avatar" src="https://placehold.it/30" alt="" />
+					<div class="comments__author">
+						<div class="comments__name">Алексей Николаенко</div>
+						<time class="comments__pubdate" datetime="2020-06-21 19:52">1 неделю назад</time>
+					</div>
 				</div>
-				<button class="btn btn_blue btn_rounded btn_sm" type="submit">Отправить</button>
-			</form>
-			
-		</div> <!--/comments-->
-	</div>
-	<!--/post content-->
+				<div class="comments__text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem odio neque esse quos. Nemo, esse
+					placeat officiis illum doloremque iusto similique quidem, minus expedita quos aperiam, sunt maxime
+					beatae.
+				</div>
+				<button class="comments__reply" type="submit">Ответить</button>
+				<ul class="comments">
+					<li class="comments__item">
+						<div class="comments__header">
+							<img class="comments__avatar" src="https://placehold.it/30" alt="" />
+							<div class="comments__author">
+								<div class="comments__name">Алексей Николаенко</div>
+								<time class="comments__pubdate" datetime="2020-06-21 19:52">1 неделю назад</time>
+							</div>
+						</div>
+						<div class="comments__text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem odio neque esse quos. Nemo, esse
+							placeat officiis illum doloremque iusto similique quidem, minus expedita quos aperiam, sunt maxime
+							beatae.
+						</div>
+						<button class="comments__reply" type="submit">Ответить</button>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<ul class="comments">
+			<li class="comments__item">
+				<div class="comments__header">
+					<img class="comments__avatar" src="https://placehold.it/30" alt="" />
+					<div class="comments__author">
+						<div class="comments__name">Алексей Николаенко</div>
+						<time class="comments__pubdate" datetime="2020-06-21 19:52">1 неделю назад</time>
+					</div>
+				</div>
+				<div class="comments__text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem odio neque esse quos. Nemo, esse
+					placeat officiis illum doloremque iusto similique quidem, minus expedita quos aperiam, sunt maxime
+					beatae.
+				</div>
+				<button class="comments__reply" type="submit">Ответить</button>
+			</li>
+		</ul>
+		<!--/comments-->
+		</div>
+		<!--/post content-->
 </article>
 <!--/post-->
