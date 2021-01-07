@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    {{> head }}
+	{{> head }}
 </head>
-<body >
+
+<body>
 	<div class="page">
 		{{> header }}
 
 		{{> sidebar}}
-		
+
 		<main class="main">
 			<div class="container">
 				{{> body }}
@@ -16,11 +18,11 @@
 		</main>
 
 	</div>
-	<!-- {{> contact-modal}} -->
-	<!-- {{> share-modal}} -->
-	<!-- {{> story-modal}} -->
+	{{> contact-modal}}
+	{{> share-modal}}
+	{{> story-modal}}
 	<!-- JS -->
-    <script src="assets/js/app.js"></script>
+	<script src="assets/js/app.js"></script>
 </body>
+
 </html>
- 
