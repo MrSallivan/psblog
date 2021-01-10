@@ -1,8 +1,16 @@
 .nav {
-	
+	@include breakpoint($tablet-bp) {
+		display: none;
+	}
+
+	&_mobile{
+		display: block;
+	}
+
 	&__list {
 		display: flex;
 	}
+
 	&__item {
 		position: relative;
 		&:hover {
@@ -15,6 +23,7 @@
 			}
 		}
 	}
+
 	&__link{
 		display: block;
 		font-size: 1.1rem;

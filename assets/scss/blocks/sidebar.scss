@@ -9,24 +9,36 @@
 	box-shadow: 5px 0px 15px rgba(5, 5, 5, 0.1);
 
 	@include breakpoint($tablet-bp) {
-		display: none;
+		top: 4rem;
+		height: calc(100vh - 4rem);
+		transform: translateX(-100%);
+		transition: transform 0.2s linear;
+
+		.show-sidebar & {
+			transform: translateX(0);
+		}
 	}
 
 	// .sidebar__header
 	&__header {
 		height: 180px;
 		background-color: $secondary;
+
 		img {
 			display: block;
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
 		}
+
+		@include breakpoint($tablet-bp) {
+			height: 10rem;
+		}
 	}
 	// .sidebar__content
 	&__content {
 		padding: 0 2rem;
-		margin-top: -5rem;
+
 	}
 	// .sidebar__footer
 	&__footer {
