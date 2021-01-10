@@ -33,9 +33,11 @@
 		@include breakpoint($tablet-bp) {
 			padding-left: 0;
 			padding-right: 0;
+			font-size: 1.5rem;
 			&:hover {
-				background-color: none;
+				background-color: transparent;
 				text-decoration: none;
+				color: $blue;
 			}
 		}
 	}

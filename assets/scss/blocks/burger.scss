@@ -11,6 +11,9 @@
 	border: none;
 	font-size: 0;
 	color: transparent;
+	@include breakpoint($tablet-bp) {
+			display: block;
+		}
 
 	&:before,
 	&:after,
@@ -39,7 +42,8 @@
 		bottom: 0;
 	}
 
-	.show-burger & {
+	.show-sidebar & {
+		
 		span {
 			opacity: 0;
 		}
@@ -59,4 +63,5 @@
 			display: block;
 		}
 	}
+	
 }
