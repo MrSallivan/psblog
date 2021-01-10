@@ -3,12 +3,20 @@
 		display: none;
 	}
 
-	&_mobile{
-		display: block;
+	&_mobile {
+		display: none;
+
+		@include breakpoint($tablet-bp) {
+			display: block;
+		}
 	}
 
 	&__list {
 		display: flex;
+
+		@include breakpoint($tablet-bp) {
+			flex-direction: column;
+		}
 	}
 
 	&__item {
@@ -22,9 +30,17 @@
 				display: block;
 			}
 		}
+		@include breakpoint($tablet-bp) {
+			&:hover {
+				.nav__link {
+					background-color: none;
+					text-decoration: none;
+				}
+			}
+		}
 	}
 
-	&__link{
+	&__link {
 		display: block;
 		font-size: 1.1rem;
 		line-height: 1.2;
@@ -32,7 +48,7 @@
 		color: $white;
 		text-decoration: none;
 		padding: 1.35rem;
-		transition: all .2s linear;
+		transition: all 0.2s linear;
 
 		&.has-subnav {
 			position: relative;
@@ -41,7 +57,7 @@
 				content: "";
 				border-style: solid;
 				border-width: 6px 5px 0 5px;
-				margin-top: .1rem;
+				margin-top: 0.1rem;
 				border-color: $white transparent transparent transparent;
 				position: absolute;
 				top: 50%;
@@ -50,5 +66,8 @@
 			}
 		}
 	}
-
+	@include breakpoint($tablet-bp) {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
