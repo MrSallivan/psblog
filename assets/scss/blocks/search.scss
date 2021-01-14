@@ -5,7 +5,7 @@
 	&__input {
 		width: 100%;
 		display: block;
-		padding:1.2rem 2rem;
+		padding: 1.2rem 2rem;
 		background: none;
 		border: none;
 		font-family: inherit;
@@ -13,7 +13,13 @@
 		color: $white;
 
 		&::placeholder {
-			color: rgba($white, .4);
+			color: rgba($white, 0.4);
+		}
+		@include breakpoint($tablet-bp) {
+			height: 4rem;
+			padding-top: 0;
+			padding-bottom: 0;
+			font-size: 1.6rem;
 		}
 	}
 }

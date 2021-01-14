@@ -5,6 +5,10 @@
 	padding: 2.5rem;
 	border-radius: 0.5rem;
 
+	@include breakpoint($mobile-bp) {
+		padding: 1.5rem;
+	}
+
 	&__actions {
 		margin-bottom: 1.5rem;
 		display: flex;
@@ -37,6 +41,10 @@
 
 		&_preview {
 			margin: -2.5rem -2.5rem 0;
+
+			@include breakpoint($mobile-bp) {
+				margin: -1.5rem -1.5rem 0;
+			}
 		}
 	}
 	&__preview {
