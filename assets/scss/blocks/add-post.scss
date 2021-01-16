@@ -4,6 +4,10 @@
 	box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.45);
 	border-radius: 5px;
 	padding: 1.5rem 2rem;
+
+	@include breakpoint($mobile-bp) {
+				padding: 1.5rem;
+			}
 		// .add-post__form
 		&__form {
 			display: flex;
@@ -32,6 +36,10 @@
 			flex-shrink: 0;
 			display: flex;
 			justify-content: space-around;
+
+			@include breakpoint($mobile-bp) {
+				width: 9rem;
+			}
 		}
 		.add-post__file,
 		.add-post__send {
@@ -42,24 +50,38 @@
 			border: none;
 			cursor: pointer;
 			transition: all .3s linear;
+
+			@include breakpoint($mobile-bp) {
+				width: 3.4rem;
+				height: 3.4rem;
+			}
 		}
 		// .add-post__input
 		&__input {
 		}
 		&__file {
 			background: #EBEBEB url("/assets/images/post/foto.svg") center no-repeat;
+
 			input {
 				display: none;
 			}
 			&:hover {
 				background-color: darken(#EBEBEB, 10%);
 			}
+
+			@include breakpoint($mobile-bp) {
+				background-size: 30px;
+			}
+			
 		}
 		// .add-post__send
 		&__send {
 			padding: 0;
 			margin: 0;
-			background-color: $blue;
+			background: $blue url("/assets/images/post/send_btn.svg") center no-repeat;
+			font-size: 0;
+			color: transparent;
+			
 			img {
 				opacity: 0.75;
 			}
@@ -67,5 +89,8 @@
 				background-color: darken($blue, 20%);
 			}
 			
+			@include breakpoint($mobile-bp) {
+				background-size: 30px;
+			}
 		}
 }

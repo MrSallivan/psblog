@@ -1,6 +1,10 @@
 .cabinet {
 	display: flex;
 
+	@include breakpoint($mobile-bp) {
+			flex-direction: column-reverse;
+		}
+	
 	&__form {
 		flex: 0 0 340px;
 	}
@@ -12,7 +16,17 @@
 		img {
 			display: block;
 			margin-bottom: 1.5rem;
+
+			@include breakpoint($mobile-bp) {
+				margin-bottom: 0.5rem;
+			}
 		}
+
+		@include breakpoint($mobile-bp) {
+				padding-left: 0rem;
+				margin: 0 auto 1.5rem;
+
+			}
 	}
 
 	&__file {

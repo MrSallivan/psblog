@@ -28,6 +28,10 @@
 		color: $white;
 		margin-bottom: 3rem;
 
+		@include breakpoint($mobile-bp) {
+				padding-left: 1rem;
+			}
+
 		&_center {
 			text-align: center;
 		}
