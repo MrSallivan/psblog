@@ -1,4 +1,4 @@
-.modal{
+.modal {
 	// display: flex;
 	display: none;
 	flex-direction: column;
@@ -10,8 +10,12 @@
 	top: 0;
 	left: 0;
 	z-index: $z-index-modal;
-	background-color: rgba($black, .8);
+	background-color: rgba($black, 0.8);
 	padding: 1rem;
+
+	&.show {
+		display: flex;
+	}
 
 	&__content {
 		position: relative;
@@ -19,10 +23,20 @@
 		max-width: 500px;
 		padding: 8rem;
 		background-color: #202020;
-		border-radius: .5rem;
+		border-radius: 0.5rem;
+		transform: translateY(-50px);
+		transition: transform 200ms ease-in-out;
 
 		&_contact {
 			padding-bottom: 2.5rem;
+		}
+
+		&_story {
+			padding: 0;
+			background: none;
+		}
+		@include breakpoint($tablet-bp) {
+			padding: 5rem 3rem 3rem;
 		}
 	}
 
@@ -33,11 +47,10 @@
 		padding: 0;
 		background: none;
 		border: none;
-		opacity: .5;
-		transition: transform .5s linear, 
-		opacity .5s linear;
+		opacity: 0.5;
+		transition: transform 0.5s linear, opacity 0.5s linear;
 
-		&:hover{
+		&:hover {
 			transform: rotate(90deg);
 			opacity: 1;
 		}
@@ -45,12 +58,22 @@
 	&__footer {
 		display: flex;
 		justify-content: center;
-		color: #B2B2B2;
+		color: #b2b2b2;
 		font-size: 1.2rem;
 		margin-top: 4rem;
 
+		@include breakpoint($mobile-bp) {
+			font-size: 1rem;
+			flex-direction: column;
+			align-items: center;
+		}
+
 		li {
-			margin: 0 .5rem;
+			margin: 0 0.5rem;
+
+			@include breakpoint($mobile-bp) {
+			margin: .5rem 0.5rem;
+		}
 		}
 		a {
 			color: inherit;
@@ -60,5 +83,9 @@
 				text-decoration: none;
 			}
 		}
+	}
+	&__video {
+		margin: 0 auto;
+		display: block;
 	}
 }

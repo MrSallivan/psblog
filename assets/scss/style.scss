@@ -25,10 +25,15 @@ body {
 	font-size: 1.4rem;
 	line-height: 1.5;
 
-	&.no-scroll,
-	&.show-sidebar {
+	&.no-scroll {
 		overflow: hidden;
 	}
+
+	@include breakpoint($tablet-bp) {
+			&.show-sidebar {
+		overflow: hidden;
+	}
+		}
 }
 /* BLOCKS */
 @import "blocks/page";
